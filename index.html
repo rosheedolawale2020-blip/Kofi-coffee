@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Kofi Coffee — Premium Coffee Trading, Cultivation & Investment</title>
+  <meta name="description" content="Premium coffee, grown with care and traded with trust. Direct from farm to global export, sustainable cultivation, and expert agricultural investment consulting." />
+  <link rel="canonical" href="https://koficoffee.com" />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://koficoffee.com" />
+  <meta property="og:title" content="Kofi Coffee — Premium Coffee Trading & Cultivation" />
+  <meta property="og:description" content="Sustainable shade-grown coffee beans, direct farm-to-cup traceability, and expert investment consulting." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kofi Coffee — Premium Coffee Trading & Cultivation" />
+  <meta name="twitter:description" content="Sustainable shade-grown coffee beans, direct farm-to-cup traceability, and expert investment consulting." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#1E120C',
+            roast: '#3A2216',
+            cream: '#F7F1E8',
+            sand: '#EBE0CE',
+            leaf: '#3E5C3A',
+            gold: '#C8A24A',
+            'gold-hover': '#b5903c',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --espresso: #1E120C;
+      --roast: #3A2216;
+      --cream: #F7F1E8;
+      --sand: #EBE0CE;
+      --leaf: #3E5C3A;
+      --gold: #C8A24A;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #2D231E;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F7F1E8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A2216;
+      border-radius: 4px;
+    }
+
+    /* Animations & Transitions */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* Card hover lift */
+    .card-hover {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -10px rgba(30, 18, 12, 0.12);
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kofi Coffee",
+    "url": "https://koficoffee.com",
+    "logo": "https://koficoffee.com/logo.svg",
+    "description": "Premium coffee, grown with care and traded with trust. Coffee bean trading, cultivation, and investment consulting.",
+    "email": "contact@koficoffee.com",
+    "telephone": "+234 903 343 5312",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kigali",
+      "addressCountry": "Rwanda"
+    }
+  }
+  </script>
+</head>
+<body class="bg-cream text-espresso selection:bg-gold/30">
+
+  <!-- CONFIG & COMPANY DETAILS (Embedded for easy reference)
+       Name: Kofi Coffee
+       Tagline: Premium coffee, grown with care and traded with trust.
+       Services: Coffee Bean Trading, Coffee Bean Cultivation, Investment Consulting
+       Email: contact@koficoffee.com | Phone/WhatsApp: +234 903 343 5312 | Location: Kigali, Rwanda
+  -->
+
+  <!-- HEADER -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-espresso/95 backdrop-blur-md text-white border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-gold rounded-lg p-1">
+        <svg class="w-9 h-9 text-gold transition-transform group-hover:scale-105" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-2.4 1.07-4.55 2.76-6.03L13.97 17.24C12.49 18.93 10.34 20 7.94 20h4.06zm6.24-3.97L10.03 6.76C11.51 5.07 13.66 4 16.06 4c4.41 0 8 3.59 8 8 0 2.4-1.07 4.55-2.76 6.03z"/>
+          <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#C8A24A"/>
+        </svg>
+        <span class="font-serif text-xl font-bold tracking-tight text-white">Kofi Coffee</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-cream/90" aria-label="Main Navigation">
+        <a href="#services" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Services</a>
+        <a href="#trading" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Coffee Trading</a>
+        <a href="#cultivation" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Cultivation</a>
+        <a href="#investment" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Investment</a>
+        <a href="#why-us" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Why Us</a>
+        <a href="#gallery" class="hover:text-gold transition-colors py-2 whitespace-nowrap">Gallery</a>
+        <a href="#faq" class="hover:text-gold transition-colors py-2 whitespace-nowrap">FAQ</a>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center bg-gold hover:bg-gold-hover text-espresso font-semibold px-5 py-3 rounded-[18px] text-sm transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-gold">
+          Get a quote
+        </a>
+
+        <!-- Hamburger Button -->
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="lg:hidden p-3 text-cream hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold rounded-lg min-h-[48px] min-w-[48px] flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Menu (Direct child of body) -->
+  <div id="mobile-menu" class="fixed inset-0 w-full h-[100dvh] bg-[#1E120C] z-[9999] flex flex-col invisible opacity-0 pointer-events-none -translate-y-[10px] transition-all duration-250 overflow-y-auto" style="padding: calc(env(safe-area-inset-top) + 16px) 24px calc(env(safe-area-inset-bottom) + 24px);" inert aria-hidden="true">
+    <!-- Top Row -->
+    <div class="flex items-center justify-between mb-8">
+      <a href="#" class="flex items-center gap-3">
+        <svg class="w-9 h-9 text-gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-2.4 1.07-4.55 2.76-6.03L13.97 17.24C12.49 18.93 10.34 20 7.94 20h4.06zm6.24-3.97L10.03 6.76C11.51 5.07 13.66 4 16.06 4c4.41 0 8 3.59 8 8 0 2.4-1.07 4.55-2.76 6.03z"/>
+          <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#C8A24A"/>
+        </svg>
+        <span class="font-serif text-xl font-bold tracking-tight text-white">Kofi Coffee</span>
+      </a>
+      <button id="mobile-menu-close" aria-label="Close Navigation Menu" class="w-12 h-12 flex items-center justify-center text-cream hover:text-gold focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Vertical List of Links -->
+    <nav class="flex flex-col" aria-label="Mobile Navigation">
+      <a href="#services" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Services</a>
+      <a href="#trading" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Trading</a>
+      <a href="#cultivation" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Cultivation</a>
+      <a href="#investment" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Investment</a>
+      <a href="#why-us" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Why Us</a>
+      <a href="#gallery" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Gallery</a>
+      <a href="#faq" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">FAQ</a>
+      <a href="#contact" class="mobile-link h-[56px] flex items-center font-serif text-[1.50rem] text-white hover:text-gold transition-colors border-b border-white/[0.12]">Contact</a>
+    </nav>
+
+    <!-- Get a Quote button at the bottom -->
+    <div class="mt-auto pt-6">
+      <a href="#contact" class="mobile-link h-[52px] w-full bg-gold hover:bg-gold-hover text-espresso font-semibold rounded-[18px] flex items-center justify-center text-base transition-all">
+        Get a Quote
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center bg-espresso text-white pt-24 pb-32 overflow-hidden">
+      <!-- Background Image with Scrim -->
+      <div class="absolute inset-0 z-0">
+        <!-- replace with client photo -->
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=2000&q=85" alt="Kofi Coffee lush mountain plantation at dawn" class="w-full h-full object-cover opacity-40 scale-105 animate-pulse duration-1000" referrerPolicy="no-referrer" />
+        <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/60 to-espresso/30"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs sm:text-sm font-medium tracking-wide mb-6 uppercase">
+          Est. Sustainable Origin Producer & Exporter
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-[1.1] max-w-4xl mx-auto text-wrap balance">
+          Premium coffee, grown with care and traded with trust.
+        </h1>
+
+        <p class="text-lg sm:text-xl text-cream/90 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+          Connecting conscientious roasters with exceptional single-origin micro-lots through ethical trade, sustainable altitude cultivation, and transparent partnerships.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <a href="#contact" class="w-full sm:w-auto min-h-[48px] px-8 py-4 bg-gold hover:bg-gold-hover text-espresso font-semibold rounded-[18px] transition-all shadow-lg text-center flex items-center justify-center">
+            Request a quote
+          </a>
+          <a href="#investment" class="w-full sm:w-auto min-h-[48px] px-8 py-4 border border-white/30 hover:border-white text-white font-medium rounded-[18px] transition-all text-center flex items-center justify-center backdrop-blur-sm">
+            Explore investment
+          </a>
+        </div>
+
+        <!-- Trust Tags -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-8 border-t border-white/10">
+          <div class="flex items-center justify-center gap-2 text-sm text-cream/80">
+            <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Direct from farm</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 text-sm text-cream/80">
+            <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Quality graded</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 text-sm text-cream/80">
+            <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Export ready</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layered Green Hills SVG at Bottom -->
+      <div class="absolute bottom-0 left-0 right-0 z-20 pointer-events-none overflow-hidden leading-none">
+        <svg class="relative block w-full h-16 sm:h-28 text-cream" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="currentColor">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.06,130.83,121.75,200,105.8,241.1,96.38,281.87,74.72,321.39,56.44Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 2. STATS BAR (Overlapping Hero Bottom) -->
+    <section class="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 sm:-mt-20 mb-10 sm:mb-20">
+      <div class="bg-white rounded-[18px] border border-stone-200/80 shadow-xl p-6 sm:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="font-sans font-extrabold text-3xl sm:text-4xl lg:text-5xl text-leaf mb-1 stat-number" style="font-variant-numeric: lining-nums tabular-nums; font-feature-settings: 'lnum' 1, 'tnum' 1;" data-target="15" data-suffix="+">0+</div>
+          <p class="text-xs sm:text-sm text-stone-600 font-medium">Years of experience</p>
+        </div>
+        <div class="text-center">
+          <div class="font-sans font-extrabold text-3xl sm:text-4xl lg:text-5xl text-leaf mb-1 stat-number" style="font-variant-numeric: lining-nums tabular-nums; font-feature-settings: 'lnum' 1, 'tnum' 1;" data-target="2400" data-suffix=" t">0 t</div>
+          <p class="text-xs sm:text-sm text-stone-600 font-medium">Tons traded yearly</p>
+        </div>
+        <div class="text-center">
+          <div class="font-sans font-extrabold text-3xl sm:text-4xl lg:text-5xl text-leaf mb-1 stat-number" style="font-variant-numeric: lining-nums tabular-nums; font-feature-settings: 'lnum' 1, 'tnum' 1;" data-target="120" data-suffix="">0</div>
+          <p class="text-xs sm:text-sm text-stone-600 font-medium">Partner farms</p>
+        </div>
+        <div class="text-center">
+          <div class="font-sans font-extrabold text-3xl sm:text-4xl lg:text-5xl text-leaf mb-1 stat-number" style="font-variant-numeric: lining-nums tabular-nums; font-feature-settings: 'lnum' 1, 'tnum' 1;" data-target="18" data-suffix="">0</div>
+          <p class="text-xs sm:text-sm text-stone-600 font-medium">Countries served</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="services" class="py-20 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">What We Do</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-espresso mt-3 mb-4">
+            Comprehensive Coffee Expertise
+          </h2>
+          <p class="text-stone-600 text-base sm:text-lg">
+            From sustainable cultivation in mineral-rich highland soils to global bulk and specialty trade, we manage every step with integrity.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service 1: Trading -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-leaf mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-espresso mb-3">Coffee Bean Trading</h3>
+              <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Global sourcing and export of premium Arabica and Robusta lots. Direct trade agreements ensuring fair compensation for growers and uncompromised green bean quality for roasters.
+              </p>
+            </div>
+            <a href="#trading" class="inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-espresso transition-colors">
+              <span>Explore trading lots</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service 2: Cultivation -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up flex flex-col justify-between" style="transition-delay: 100ms;">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-leaf mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-espresso mb-3">Coffee Cultivation</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Sustainable shade-grown coffee farming using regenerative agricultural practices. Preserving local biodiversity, optimizing soil health, and hand-picking only ripe cherries.
+              </p>
+            </div>
+            <a href="#cultivation" class="inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-espresso transition-colors">
+              <span>Discover our farming</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service 3: Investment Consulting -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up flex flex-col justify-between" style="transition-delay: 200ms;">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-leaf mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-espresso mb-3">Investment Consulting</h3>
+              <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Expert advisory for agricultural investors and family offices looking to establish, expand, or optimize coffee plantation assets with maximum yield and ESG compliance.
+              </p>
+            </div>
+            <a href="#investment" class="inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-espresso transition-colors">
+              <span>View consulting services</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. COFFEE TRADING SECTION -->
+    <section id="trading" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">Global Export & Trade</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-espresso mt-3 mb-4">
+            Available Harvest Lots
+          </h2>
+          <p class="text-stone-600 text-base sm:text-lg">
+            Browse our current season sample lots. All exports are fully certified, moisture-tested, and prepared in grainPro bags.
+          </p>
+          <p class="text-xs text-stone-500 mt-2 italic">*Note: These are sample lots for prospective buyers. Custom blending and origin requests available.</p>
+        </div>
+
+        <!-- 3 Lot Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          
+          <!-- Lot 1: Arabica -->
+          <div class="bg-cream rounded-[18px] border border-stone-200 overflow-hidden card-hover fade-up flex flex-col">
+            <div class="h-56 relative overflow-hidden">
+              <!-- replace with client photo -->
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Single Origin Arabica Coffee Beans" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div class="absolute top-4 right-4 bg-espresso text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Grade 1
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs text-leaf font-semibold uppercase tracking-wider">Highland Arabica</span>
+                <h3 class="font-serif text-2xl font-bold text-espresso mt-1 mb-4">Rwanda Bourbon Micro-Lot</h3>
+                
+                <div class="space-y-2 text-sm text-stone-700 mb-6 border-y border-stone-200/60 py-4">
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Process:</span>
+                    <span class="font-medium text-espresso">Fully Washed</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Flavor Profile:</span>
+                    <span class="font-medium text-espresso">Jasmine, Citrus, Red Apple</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Altitude:</span>
+                    <span class="font-medium text-espresso">1,850m - 2,100m</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Minimum Order:</span>
+                    <span class="font-medium text-espresso">500 kg (1 Bag Export)</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="w-full text-center py-3 bg-espresso text-white rounded-[14px] text-sm font-semibold hover:bg-roast transition-colors">
+                Inquire about this lot
+              </a>
+            </div>
+          </div>
+
+          <!-- Lot 2: Specialty -->
+          <div class="bg-cream rounded-[18px] border border-stone-200 overflow-hidden card-hover fade-up flex flex-col" style="transition-delay: 100ms;">
+            <div class="h-56 relative overflow-hidden">
+              <!-- replace with client photo -->
+              <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=800&q=80" alt="Ethiopian Yirgacheffe Specialty Coffee Beans" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div class="absolute top-4 right-4 bg-gold text-espresso text-xs font-semibold px-3 py-1 rounded-full">
+                Cup Score 88.5
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs text-leaf font-semibold uppercase tracking-wider">Specialty Honey Process</span>
+                <h3 class="font-serif text-2xl font-bold text-espresso mt-1 mb-4">Ethiopian Yirgacheffe Reserve</h3>
+                
+                <div class="space-y-2 text-sm text-stone-700 mb-6 border-y border-stone-200/60 py-4">
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Process:</span>
+                    <span class="font-medium text-espresso">Yellow Honey</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Flavor Profile:</span>
+                    <span class="font-medium text-espresso">Bergamot, Peach, Honey</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Altitude:</span>
+                    <span class="font-medium text-espresso">2,000m - 2,250m</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Minimum Order:</span>
+                    <span class="font-medium text-espresso">300 kg</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="w-full text-center py-3 bg-espresso text-white rounded-[14px] text-sm font-semibold hover:bg-roast transition-colors">
+                Inquire about this lot
+              </a>
+            </div>
+          </div>
+
+          <!-- Lot 3: Robusta -->
+          <div class="bg-cream rounded-[18px] border border-stone-200 overflow-hidden card-hover fade-up flex flex-col" style="transition-delay: 200ms;">
+            <div class="h-56 relative overflow-hidden">
+              <!-- replace with client photo -->
+              <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80" alt="Robusta Coffee Beans" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div class="absolute top-4 right-4 bg-espresso text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Grade AA
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs text-leaf font-semibold uppercase tracking-wider">Fine Robusta</span>
+                <h3 class="font-serif text-2xl font-bold text-espresso mt-1 mb-4">East African Robusta Bold</h3>
+                
+                <div class="space-y-2 text-sm text-stone-700 mb-6 border-y border-stone-200/60 py-4">
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Process:</span>
+                    <span class="font-medium text-espresso">Natural Sun-Dried</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Flavor Profile:</span>
+                    <span class="font-medium text-espresso">Dark Chocolate, Walnut, Crema</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Altitude:</span>
+                    <span class="font-medium text-espresso">1,200m - 1,500m</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-stone-500">Minimum Order:</span>
+                    <span class="font-medium text-espresso">1,000 kg (Full Pallet)</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="w-full text-center py-3 bg-espresso text-white rounded-[14px] text-sm font-semibold hover:bg-roast transition-colors">
+                Inquire about this lot
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4-Step How to Order Flow -->
+        <div class="bg-cream rounded-[18px] border border-stone-200 p-8 sm:p-12">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-espresso mb-3">How to Order Green Beans</h3>
+            <p class="text-stone-600 text-sm">A seamless, transparent procurement process from initial sample request to port delivery.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-full bg-gold/20 text-espresso font-bold flex items-center justify-center mx-auto mb-4 text-lg font-serif">1</div>
+              <h4 class="font-semibold text-espresso mb-2">Send inquiry</h4>
+              <p class="text-xs text-stone-600 leading-relaxed">Submit your volume, destination port, and preferred coffee profile.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-full bg-gold/20 text-espresso font-bold flex items-center justify-center mx-auto mb-4 text-lg font-serif">2</div>
+              <h4 class="font-semibold text-espresso mb-2">Get samples</h4>
+              <p class="text-xs text-stone-600 leading-relaxed">We express-ship 300g green bean sample boxes directly to your roastery.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-full bg-gold/20 text-espresso font-bold flex items-center justify-center mx-auto mb-4 text-lg font-serif">3</div>
+              <h4 class="font-semibold text-espresso mb-2">Sign contract</h4>
+              <p class="text-xs text-stone-600 leading-relaxed">Finalize direct trade terms, escrow payment, and delivery schedule.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-full bg-gold/20 text-espresso font-bold flex items-center justify-center mx-auto mb-4 text-lg font-serif">4</div>
+              <h4 class="font-semibold text-espresso mb-2">We ship</h4>
+              <p class="text-xs text-stone-600 leading-relaxed">Secure container loading with full phytosanitary documentation and tracking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CULTIVATION SECTION -->
+    <section id="cultivation" class="py-20 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: Text about sustainable farming -->
+          <div class="fade-up">
+            <span class="text-xs uppercase tracking-widest text-leaf font-bold">Sustainable Roots</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-espresso mt-3 mb-6">
+              Shade-Grown Farming & Regenerative Care
+            </h2>
+            <p class="text-stone-700 text-base leading-relaxed mb-6">
+              At Kofi Coffee, we believe that world-class coffee begins with healthy ecosystems. Our partner plantations utilize indigenous shade trees to protect coffee shrubs from intense equatorial sun while supporting local migratory birds and pollinator habitats.
+            </p>
+            <p class="text-stone-700 text-base leading-relaxed mb-8">
+              By avoiding synthetic fertilizers and practicing hand-selection of only deep-red cherries, we ensure unparalleled bean density, complex acidity, and long-term soil fertility for generations to come.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-200">
+              <div>
+                <div class="font-serif text-3xl font-bold text-leaf mb-1">100%</div>
+                <p class="text-xs text-stone-600 font-medium">Shade-grown canopy</p>
+              </div>
+              <div>
+                <div class="font-serif text-3xl font-bold text-leaf mb-1">Zero</div>
+                <p class="text-xs text-stone-600 font-medium">Harmful agrochemicals</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Vertical 4-Step Timeline with Farm Photo -->
+          <div class="fade-up">
+            <div class="relative rounded-[18px] overflow-hidden shadow-xl mb-8 h-64 sm:h-72">
+              <!-- replace with client photo -->
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Kofi Coffee sustainable farm workers harvesting cherries" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent flex items-end p-6">
+                <span class="text-white text-sm font-medium">Highland Farm Estate — Rwanda & Ethiopia</span>
+              </div>
+            </div>
+
+            <!-- Vertical Timeline -->
+            <div class="space-y-6">
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-leaf text-white font-bold flex items-center justify-center shrink-0 text-xs">1</div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-base">Planting & Nursery</h4>
+                  <p class="text-xs text-stone-600 leading-relaxed">Selecting resilient heirloom varietals nurtured in organic compost beds for 9 months.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-leaf text-white font-bold flex items-center justify-center shrink-0 text-xs">2</div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-base">Growing under Canopy</h4>
+                  <p class="text-xs text-stone-600 leading-relaxed">Slow maturation under native shade trees, developing deep sugars and rich flavor complexity.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-leaf text-white font-bold flex items-center justify-center shrink-0 text-xs">3</div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-base">Selective Harvesting</h4>
+                  <p class="text-xs text-stone-600 leading-relaxed">Hand-picking solely the perfectly ripe ruby-red cherries across multiple harvest passes.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-leaf text-white font-bold flex items-center justify-center shrink-0 text-xs">4</div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-base">Processing & Grading</h4>
+                  <p class="text-xs text-stone-600 leading-relaxed">Meticulous washing, sun-drying on raised African beds, density sorting, and optical color grading.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INVESTMENT CONSULTING SECTION -->
+    <section id="investment" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-espresso text-white rounded-[24px] p-8 sm:p-14 lg:p-16 relative overflow-hidden fade-up">
+          <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="max-w-3xl mb-12 relative z-10">
+            <span class="text-xs uppercase tracking-widest text-gold font-bold">Agricultural Advisory</span>
+            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mt-3 mb-4">
+              Investment Consulting for Coffee Cultivation
+            </h2>
+            <p class="text-cream/80 text-base sm:text-lg leading-relaxed">
+              Partner with our agronomists and supply chain experts to establish, manage, or scale profitable coffee estates in prime African highlands.
+            </p>
+          </div>
+
+          <!-- 3 Step Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10 mb-12">
+            
+            <div class="bg-roast/60 border border-white/10 rounded-[18px] p-6 backdrop-blur-sm">
+              <span class="text-gold font-serif text-xl font-bold">01</span>
+              <h3 class="font-serif text-xl font-bold text-white mt-2 mb-2">Discovery & Soil Analysis</h3>
+              <p class="text-xs text-cream/70 leading-relaxed">
+                Comprehensive land appraisal, water rights verification, and rigorous soil nutrient testing for optimal crop suitability.
+              </p>
+            </div>
+
+            <div class="bg-roast/60 border border-white/10 rounded-[18px] p-6 backdrop-blur-sm">
+              <span class="text-gold font-serif text-xl font-bold">02</span>
+              <h3 class="font-serif text-xl font-bold text-white mt-2 mb-2">Feasibility & Financial Modeling</h3>
+              <p class="text-xs text-cream/70 leading-relaxed">
+                Detailed capital expenditure budgets, multi-year yield projections, labor forecasts, and international export price modeling.
+              </p>
+            </div>
+
+            <div class="bg-roast/60 border border-white/10 rounded-[18px] p-6 backdrop-blur-sm">
+              <span class="text-gold font-serif text-xl font-bold">03</span>
+              <h3 class="font-serif text-xl font-bold text-white mt-2 mb-2">Plantation Plan & Execution</h3>
+              <p class="text-xs text-cream/70 leading-relaxed">
+                End-to-end nursery setup, shade tree planting, irrigation engineering, and local management team training.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-white/10 relative z-10">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center bg-gold hover:bg-gold-hover text-espresso font-semibold px-8 py-4 rounded-[18px] transition-all text-sm">
+              Book a consultation
+            </a>
+            <p class="text-xs text-cream/60 max-w-xl text-center sm:text-right">
+              *Disclaimer: Agricultural returns depend heavily on weather conditions, global commodity prices, and farm management practices. Past yields do not guarantee future returns.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY CHOOSE US -->
+    <section id="why-us" class="py-20 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">Our Advantage</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-espresso mt-3 mb-4">
+            Why Choose Kofi Coffee
+          </h2>
+          <p class="text-stone-600 text-base sm:text-lg">
+            We bridge the gap between origin growers and specialty roasters with uncompromising standards.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Full Traceability</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Every green bean lot is tracked directly back to the specific washing station and cooperative parcel of origin.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up" style="transition-delay: 50ms;">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Quality First</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Strict Q-grader cup testing, moisture analysis, and defect sorting before any bag leaves our warehouses.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up" style="transition-delay: 100ms;">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Transparent Pricing</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Fair, above-market farm-gate prices that empower growers and guarantee sustainable community reinvestment.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up" style="transition-delay: 150ms;">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Reliable Logistics</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              End-to-end export management, customs clearance, and timely container dispatch to global destination ports.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up" style="transition-delay: 200ms;">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Sustainable Farming</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Regenerative shade-grown cultivation practices that preserve soil integrity and protect regional biodiversity.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white rounded-[18px] border border-stone-200/80 p-8 card-hover fade-up" style="transition-delay: 250ms;">
+            <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-leaf mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-espresso mb-2">Expert Support</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Dedicated account managers and agronomists ready to assist with custom sample requests and investment planning.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">Visual Journey</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-espresso mt-3 mb-4">
+            From Plantation to Port
+          </h2>
+          <p class="text-stone-600 text-base sm:text-lg">
+            Tap any image to view in high-resolution lightbox.
+          </p>
+        </div>
+
+        <!-- Responsive Photo Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Gallery Item 1 -->
+          <div class="group relative rounded-[18px] overflow-hidden aspect-square cursor-pointer shadow-md bg-stone-100 fade-up" onclick="openLightbox(this)">
+            <!-- replace with client photo -->
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Mountain Coffee Plantation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" />
+            <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-sm">
+              View Plantation
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="group relative rounded-[18px] overflow-hidden aspect-square cursor-pointer shadow-md bg-stone-100 fade-up" style="transition-delay: 100ms;" onclick="openLightbox(this)">
+            <!-- replace with client photo -->
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Raw Coffee Beans Sorting" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" />
+            <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-sm">
+              View Bean Selection
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="group relative rounded-[18px] overflow-hidden aspect-square cursor-pointer shadow-md bg-stone-100 fade-up" style="transition-delay: 200ms;" onclick="openLightbox(this)">
+            <!-- replace with client photo -->
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Harvest Season Cherry Picking" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" />
+            <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-sm">
+              View Harvest
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="group relative rounded-[18px] overflow-hidden aspect-square cursor-pointer shadow-md bg-stone-100 fade-up" style="transition-delay: 300ms;" onclick="openLightbox(this)">
+            <!-- replace with client photo -->
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Export Container Shipping" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" />
+            <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-sm">
+              View Export Port
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-espresso/90 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+      <button id="lightbox-close" aria-label="Close Lightbox" class="absolute top-6 right-6 text-white hover:text-gold p-3 min-h-[48px] min-w-[48px] flex items-center justify-center">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="max-w-4xl max-h-[85vh] overflow-hidden rounded-[18px]">
+        <img id="lightbox-img" src="" alt="Enlarged view" class="w-full h-auto max-h-[80vh] object-contain rounded-[18px]" />
+      </div>
+    </div>
+
+    <!-- 9. TESTIMONIALS CAROUSEL -->
+    <section class="py-20 bg-cream">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">Client Testimonials</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-espresso mt-3 mb-4">
+            Trusted by Specialty Roasters
+          </h2>
+          <p class="text-stone-600 text-sm">Sample reviews from our global importing partners.</p>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="relative overflow-hidden fade-up">
+          <div id="testimonial-track" class="flex transition-transform duration-500 ease-out">
+            
+            <!-- Slide 1 -->
+            <div class="w-full shrink-0 px-4">
+              <div class="bg-white rounded-[18px] border border-stone-200 p-8 sm:p-12 text-center shadow-sm">
+                <svg class="w-10 h-10 text-gold mx-auto mb-6 opacity-60" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                <p class="font-serif text-xl sm:text-2xl text-espresso italic mb-8 max-w-2xl mx-auto leading-relaxed">
+                  "Kofi Coffee's green bean consistency and transparent direct trade have elevated our single-origin roasts to new heights. Their Bourbon micro-lots are an instant customer favorite."
+                </p>
+                <h4 class="font-semibold text-espresso">Marcus Vance</h4>
+                <p class="text-xs text-stone-500 mt-1">Head Roaster & Founder, Artisan Brews (London, UK)</p>
+                <span class="inline-block mt-3 text-[10px] uppercase tracking-wider bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full">Sample Review</span>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="w-full shrink-0 px-4">
+              <div class="bg-white rounded-[18px] border border-stone-200 p-8 sm:p-12 text-center shadow-sm">
+                <svg class="w-10 h-10 text-gold mx-auto mb-6 opacity-60" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                <p class="font-serif text-xl sm:text-2xl text-espresso italic mb-8 max-w-2xl mx-auto leading-relaxed">
+                  "The investment advisory team at Kofi Coffee helped us structure our highland plantation asset with exceptional precision. Their expertise in sustainable soil management is world-class."
+                </p>
+                <h4 class="font-semibold text-espresso">Elena Rostova</h4>
+                <p class="text-xs text-stone-500 mt-1">Managing Director, Highland Agri Capital (Zurich, Switzerland)</p>
+                <span class="inline-block mt-3 text-[10px] uppercase tracking-wider bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full">Sample Review</span>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-full shrink-0 px-4">
+              <div class="bg-white rounded-[18px] border border-stone-200 p-8 sm:p-12 text-center shadow-sm">
+                <svg class="w-10 h-10 text-gold mx-auto mb-6 opacity-60" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                <p class="font-serif text-xl sm:text-2xl text-espresso italic mb-8 max-w-2xl mx-auto leading-relaxed">
+                  "Sample delivery was lightning-fast, and the export documentation was flawless. Working with Kofi Coffee has been the most reliable partnership in our 12 years of coffee importing."
+                </p>
+                <h4 class="font-semibold text-espresso">Kenji Sato</h4>
+                <p class="text-xs text-stone-500 mt-1">Lead Procurement Officer, Tokyo Specialty Beans (Tokyo, Japan)</p>
+                <span class="inline-block mt-3 text-[10px] uppercase tracking-wider bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full">Sample Review</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Dots -->
+          <div class="flex justify-center gap-3 mt-8">
+            <button onclick="goToSlide(0)" aria-label="Slide 1" class="carousel-dot w-3 h-3 rounded-full bg-stone-300 transition-colors focus:outline-none"></button>
+            <button onclick="goToSlide(1)" aria-label="Slide 2" class="carousel-dot w-3 h-3 rounded-full bg-stone-300 transition-colors focus:outline-none"></button>
+            <button onclick="goToSlide(2)" aria-label="Slide 3" class="carousel-dot w-3 h-3 rounded-full bg-stone-300 transition-colors focus:outline-none"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ SECTION -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+          <span class="text-xs uppercase tracking-widest text-leaf font-bold">Got Questions?</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-espresso mt-3 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-stone-600 text-sm">Everything you need to know about our coffee trading lots, farming practices, and investment services.</p>
+        </div>
+
+        <div class="space-y-4 fade-up">
+          
+          <!-- FAQ 1 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>What is the minimum order quantity for green coffee beans?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              Our minimum order quantity for micro-lots starts at 300 kg, while standard container export lots start at 500 kg (1 export bag pallet) up to full 20-foot and 40-foot container loads.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>Can I request green coffee samples before placing a bulk order?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              Yes! We express-ship 300g green bean sample boxes to commercial roasters worldwide. Simply submit your sample request through our contact form or WhatsApp.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>Are your coffee beans certified organic and fair trade?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              All our partner farms practice strict shade-grown organic cultivation without synthetic agrochemicals. Many lots carry UTZ, Rainforest Alliance, and Fair Trade certifications upon request.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>What incoterms do you support for international shipping?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              We routinely ship under FOB (Free on Board), CIF (Cost, Insurance, and Freight), and EXW (Ex Works) terms depending on buyer preference and destination port requirements.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>How does agricultural investment consulting work?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              We provide end-to-end advisory including soil testing, feasibility modeling, plantation design, and on-the-ground management for investors looking to acquire or expand coffee estate assets.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>Can investors visit the partner coffee plantations in person?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              Absolutely! We host scheduled VIP agricultural tours for prospective investors and roasters during harvest season (March to June and October to December).
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="border border-stone-200 rounded-[14px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-espresso flex justify-between items-center gap-4 bg-stone-50 hover:bg-stone-100 transition-colors">
+              <span>What is the expected timeline from contract to port delivery?</span>
+              <svg class="w-5 h-5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="px-6 py-4 text-sm text-stone-600 leading-relaxed hidden bg-white">
+              For ready warehouse lots, dispatch takes 7-14 business days. For fresh harvest seasonal contracts, container loading and shipping typically take 21-35 days depending on destination.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          
+          <!-- Left: Contact Details -->
+          <div class="fade-up">
+            <span class="text-xs uppercase tracking-widest text-leaf font-bold">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-espresso mt-3 mb-6">
+              Let's Discuss Your Coffee Needs
+            </h2>
+            <p class="text-stone-700 text-base leading-relaxed mb-8">
+              Whether you are looking to secure green bean export lots, schedule sample deliveries, or explore agricultural investment consulting, our team is ready to respond within 24 hours.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center text-leaf shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-sm">Email Us</h4>
+                  <a href="mailto:contact@koficoffee.com" class="text-stone-600 text-sm hover:text-leaf transition-colors">contact@koficoffee.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center text-leaf shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-sm">Phone & WhatsApp</h4>
+                  <a href="https://wa.me/2349033435312" target="_blank" rel="noopener noreferrer" class="text-stone-600 text-sm hover:text-leaf transition-colors">+234 903 343 5312</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center text-leaf shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-espresso text-sm">Location</h4>
+                  <p class="text-stone-600 text-sm">Kigali Heights, KG 7 Ave, Kigali, Rwanda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Validated Contact Form -->
+          <div class="bg-white rounded-[18px] border border-stone-200 p-8 sm:p-10 shadow-sm fade-up">
+            <h3 class="font-serif text-2xl font-bold text-espresso mb-6">Send an Inquiry</h3>
+            
+            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+              <div>
+                <label for="fullName" class="block text-xs font-semibold uppercase text-stone-700 mb-2">Full Name *</label>
+                <input type="text" id="fullName" required class="w-full px-4 py-3 rounded-[12px] border border-stone-300 focus:outline-none focus:ring-2 focus:ring-leaf text-sm text-espresso bg-stone-50/50" placeholder="Marcus Vance" />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-xs font-semibold uppercase text-stone-700 mb-2">Email *</label>
+                  <input type="email" id="email" required class="w-full px-4 py-3 rounded-[12px] border border-stone-300 focus:outline-none focus:ring-2 focus:ring-leaf text-sm text-espresso bg-stone-50/50" placeholder="marcus@artisanbrews.com" />
+                </div>
+                <div>
+                  <label for="phone" class="block text-xs font-semibold uppercase text-stone-700 mb-2">Phone / WhatsApp</label>
+                  <input type="tel" id="phone" class="w-full px-4 py-3 rounded-[12px] border border-stone-300 focus:outline-none focus:ring-2 focus:ring-leaf text-sm text-espresso bg-stone-50/50" placeholder="+44 20 7946 0921" />
+                </div>
+              </div>
+
+              <div>
+                <label for="interest" class="block text-xs font-semibold uppercase text-stone-700 mb-2">Primary Interest *</label>
+                <select id="interest" required class="w-full px-4 py-3 rounded-[12px] border border-stone-300 focus:outline-none focus:ring-2 focus:ring-leaf text-sm text-espresso bg-stone-50/50">
+                  <option value="" disabled selected>Select your interest</option>
+                  <option value="Buy coffee">Buy coffee (Green Bean Trading)</option>
+                  <option value="Invest in cultivation">Invest in cultivation</option>
+                  <option value="Visit a farm">Visit a farm</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold uppercase text-stone-700 mb-2">Message *</label>
+                <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-[12px] border border-stone-300 focus:outline-none focus:ring-2 focus:ring-leaf text-sm text-espresso bg-stone-50/50" placeholder="Please specify desired bean volume, destination port, or investment scope..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 bg-gold hover:bg-gold-hover text-espresso font-semibold rounded-[14px] transition-all text-sm shadow-sm flex items-center justify-center gap-2">
+                <span>Submit Inquiry & Open WhatsApp</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+
+              <div id="form-success" class="hidden p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-[12px] text-xs text-center font-medium">
+                Thank you! Your inquiry was submitted successfully and WhatsApp has been pre-filled. We will respond within 24 hours.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 12. FOOTER -->
+  <footer class="bg-espresso text-cream pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        
+        <!-- Col 1: Brand & Desc -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-2.4 1.07-4.55 2.76-6.03L13.97 17.24C12.49 18.93 10.34 20 7.94 20h4.06zm6.24-3.97L10.03 6.76C11.51 5.07 13.66 4 16.06 4c4.41 0 8 3.59 8 8 0 2.4-1.07 4.55-2.76 6.03z"/>
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#C8A24A"/>
+            </svg>
+            <span class="font-serif text-xl font-bold tracking-tight text-white">Kofi Coffee</span>
+          </div>
+          <p class="text-cream/80 text-sm leading-relaxed max-w-sm mb-6 font-light">
+            Premium coffee, grown with care and traded with trust. Connecting international roasters with sustainable origin micro-lots and expert agricultural consulting.
+          </p>
+          <!-- Social Icons SVG -->
+          <div class="flex items-center gap-4">
+            <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 hover:bg-gold hover:text-espresso flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-full bg-white/5 hover:bg-gold hover:text-espresso flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+            <a href="https://wa.me/250788123456" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/5 hover:bg-gold hover:text-espresso flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Company Links -->
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-3 text-sm text-cream/80">
+            <li><a href="#services" class="hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="#cultivation" class="hover:text-gold transition-colors">Sustainable Farming</a></li>
+            <li><a href="#why-us" class="hover:text-gold transition-colors">Why Choose Us</a></li>
+            <li><a href="#gallery" class="hover:text-gold transition-colors">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Links -->
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-3 text-sm text-cream/80">
+            <li><a href="#trading" class="hover:text-gold transition-colors">Coffee Bean Trading</a></li>
+            <li><a href="#cultivation" class="hover:text-gold transition-colors">Bean Cultivation</a></li>
+            <li><a href="#investment" class="hover:text-gold transition-colors">Investment Consulting</a></li>
+            <li><a href="#trading" class="hover:text-gold transition-colors">Sample Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Support -->
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm text-cream/80">
+            <li><a href="#contact" class="hover:text-gold transition-colors">Inquiry Form</a></li>
+            <li><a href="#faq" class="hover:text-gold transition-colors">FAQ</a></li>
+            <li><a href="mailto:contact@koficoffee.com" class="hover:text-gold transition-colors">contact@koficoffee.com</a></li>
+            <li><a href="https://wa.me/2349033435312" class="hover:text-gold transition-colors">+234 903 343 5312</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/60">
+        <p>&copy; 2026 Kofi Coffee. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="#" class="hover:text-gold transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold transition-colors">Terms of Trade</a>
+          <a href="#" class="hover:text-gold transition-colors">Export Compliance</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE FIXED BOTTOM BAR -->
+  <div id="mobile-bottom-bar" class="fixed bottom-0 left-0 right-0 z-40 bg-espresso/95 backdrop-blur-md border-t border-white/10 p-3 sm:hidden flex items-center justify-between gap-3" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom));">
+    <a href="#contact" class="flex-1 py-3 bg-gold text-espresso font-semibold rounded-[14px] text-xs text-center shadow-sm">
+      Get a Quote
+    </a>
+    <a href="https://wa.me/2349033435312?text=Hello%20Kofi%20Coffee,%20I%20would%20like%20to%20inquire%20about..." target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-emerald-600 text-white font-semibold rounded-[14px] text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT INTERACTIONS -->
+  <script>
+    // Mobile Menu Toggle & Behavior
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const mobileBottomBar = document.getElementById('mobile-bottom-bar');
+
+    function openMobileMenu() {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove('invisible', 'opacity-0', 'pointer-events-none', '-translate-y-[10px]');
+      mobileMenu.classList.add('visible', 'opacity-100', 'pointer-events-auto', 'translate-y-0');
+      mobileMenu.removeAttribute('inert');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (mobileBottomBar) mobileBottomBar.classList.add('hidden');
+      if (mobileMenuBtn) mobileMenuBtn.classList.add('hidden');
+    }
+
+    function closeMobileMenu() {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove('visible', 'opacity-100', 'pointer-events-auto', 'translate-y-0');
+      mobileMenu.classList.add('invisible', 'opacity-0', 'pointer-events-none', '-translate-y-[10px]');
+      mobileMenu.setAttribute('inert', '');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (mobileBottomBar) mobileBottomBar.classList.remove('hidden');
+      if (mobileMenuBtn) mobileMenuBtn.classList.remove('hidden');
+    }
+
+    function toggleMobileMenu() {
+      const isOpen = !mobileMenu.classList.contains('invisible');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+      }
+    });
+
+    // Close when screen becomes wider than 900px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) {
+        closeMobileMenu();
+      }
+    });
+
+    // IntersectionObserver for Scroll Reveal (Fade-up)
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Stats Count-Up Animation
+    const statsSection = document.querySelector('.stat-number');
+    let animatedStats = false;
+
+    function animateStats() {
+      if (animatedStats) return;
+      const numbers = document.querySelectorAll('.stat-number');
+      numbers.forEach(numEl => {
+        const target = parseInt(numEl.getAttribute('data-target'));
+        const suffix = numEl.getAttribute('data-suffix') || '';
+        let current = 0;
+        const duration = 2000; // 2 seconds
+        const stepTime = Math.max(Math.floor(duration / target), 20);
+        
+        const timer = setInterval(() => {
+          current += Math.ceil(target / (duration / stepTime));
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          let disp = current;
+          if (target === 2400) {
+            disp = current.toLocaleString('en-US');
+          }
+          numEl.textContent = disp + suffix;
+        }, stepTime);
+      });
+      animatedStats = true;
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateStats();
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statsSection) {
+      statsObserver.observe(statsSection.parentElement);
+    }
+
+    // Testimonials Carousel
+    let currentSlide = 0;
+    const track = document.getElementById('testimonial-track');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const totalSlides = 3;
+
+    function updateCarousel() {
+      if (!track) return;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) {
+          dot.classList.remove('bg-stone-300');
+          dot.classList.add('bg-gold');
+        } else {
+          dot.classList.remove('bg-gold');
+          dot.classList.add('bg-stone-300');
+        }
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    // Auto advance carousel every 6 seconds
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }, 6000);
+
+    // Initial dot state
+    updateCarousel();
+
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('svg');
+      const isOpen = !content.classList.contains('hidden');
+
+      // Close all other accordions
+      document.querySelectorAll('#faq .space-y-4 > div').forEach(item => {
+        const c = item.querySelector('div');
+        const i = item.querySelector('svg');
+        c.classList.add('hidden');
+        i.style.transform = 'rotate(0deg)';
+      });
+
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      lightboxImg.src = img.src;
+      lightbox.classList.remove('opacity-0', 'pointer-events-none');
+      lightbox.classList.add('opacity-100', 'pointer-events-auto');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightboxFunc() {
+      lightbox.classList.remove('opacity-100', 'pointer-events-auto');
+      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightboxFunc);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightboxFunc();
+    });
+
+    // Contact Form Submission & WhatsApp Redirect
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value;
+
+      const successBox = document.getElementById('form-success');
+      successBox.classList.remove('hidden');
+
+      // Construct WhatsApp pre-filled message
+      const waText = encodeURIComponent(`Hello Kofi Coffee,\n\nMy name is ${fullName}.\nEmail: ${email}\nPhone: ${phone}\nInterest: ${interest}\n\nMessage: ${message}`);
+      const waUrl = `https://wa.me/2349033435312?text=${waText}`;
+
+      // Open WhatsApp after a brief moment
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 1000);
+
+      // Reset form
+      document.getElementById('contact-form').reset();
+    }
+  </script>
+
+</body>
+</html>
